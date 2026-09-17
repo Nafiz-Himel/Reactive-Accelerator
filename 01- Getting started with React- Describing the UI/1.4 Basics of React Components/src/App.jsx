@@ -1,9 +1,12 @@
-function App() {
-  return (
-    <div>
-      <p>Hello World!</p>
-    </div>
-  )
-}
+import { Profile } from "./components/Profile";
 
-export default App
+
+export default function Gallery() {
+  return (
+    <section>
+      <h1>Amazing scientists</h1>
+      <Profile />
+      <Profile />
+    </section>
+  );
+}
