@@ -5,7 +5,7 @@ function Item({ name, isPacked }) {
 
   //     return <li className="item">{name}</li>
 
-  return <li className="item">{isPacked ? name + "✅" : <del>{name}</del>}</li>;
+  return <li className="item">{name} {isPacked && "✅"}</li>;
 }
 
 export default function PackingList() {
