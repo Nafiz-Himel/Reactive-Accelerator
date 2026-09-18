@@ -2,13 +2,11 @@ import React from "react";
 import Avatar from "./Avatar";
 import Info from "./INfo";
 
-export default function Profile(props) {
+export default function Profile({children}) {
 
   return (
     <div>
-      <Avatar {...props}/>
-
-      <Info age = {props.age} />
+      {children}
     </div>
   );
 }
