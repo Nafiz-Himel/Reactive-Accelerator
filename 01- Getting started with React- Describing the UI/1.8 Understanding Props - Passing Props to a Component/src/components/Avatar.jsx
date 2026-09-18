@@ -1,21 +1,9 @@
-import React from "react";
 
-// {
-//   person: {
-//     name: "Lin Lanying",
-//     imageID : "1bX5QH6"
-//   },
-//   size: 100
-// }
-
-export default function Avatar({person,size}) {
-//   const { person, size } = props;
+export default function Avatar({person, age}) {
   return (
   <div>
     <div>
-        <h1>{person.name}</h1>
-        <p>{person.iamgeID}</p>
-        <div>{size}</div>
+        <h1>{person} {age}</h1>
     </div>
   </div>
 );

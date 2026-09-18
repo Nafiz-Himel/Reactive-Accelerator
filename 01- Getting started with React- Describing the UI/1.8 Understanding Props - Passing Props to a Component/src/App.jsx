@@ -1,10 +1,16 @@
 import Avatar from "./components/Avatar";
+import Profile from "./components/Profile";
 
 export default function App() {
+  const person = "Tamim";
+  const size = 38;
+  const age = 40;
+
   return (
-    <Avatar
-      person={{ name: 'Lin Lanying', imageId: '1bX5QH6' }}
-      size={100}
-    />
+    <div>
+      <div>
+        <Profile person={person} age={age} size={size} />
+      </div>
+    </div>
   );
 }
