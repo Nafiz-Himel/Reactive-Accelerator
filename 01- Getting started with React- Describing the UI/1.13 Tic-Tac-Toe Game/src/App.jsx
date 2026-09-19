@@ -2,13 +2,13 @@
 //  -> Board
 //       -> Square
 //  -> History
-import {useSate} from "react"
+import {useState} from "react"
 
 
 function Square() {
   const [value, setvalue] = useState(null)
 
-  funciton handleClick(){
+  function handleClick(){
     console.log("Clicked!")
     setvalue("X")
   }
