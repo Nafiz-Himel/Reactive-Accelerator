@@ -26,14 +26,28 @@ function Square({value,onSquareClick}) {
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null))
 
+  const [xIsNext,setXISNext] = useState(true)
+
   function handleClick(idx){
+
+    if(squares[idx]){
+      return
+    }
+    
     console.log("Clicked!")
     
     // squares[0]="X"
     // setSquares([...squares])
     const nextSquares = squares.slice()
-    nextSquares[idx] = "X"
+    // nextSquares[idx] = "X"
+
+    if(xIsNext){
+      nextSquares[idx] = "X"
+    }else{
+      nextSquares[idx] = "O"
+    }
     setSquares(nextSquares)
+    setXISNext(!xIsNext)
 
   }
   return (
