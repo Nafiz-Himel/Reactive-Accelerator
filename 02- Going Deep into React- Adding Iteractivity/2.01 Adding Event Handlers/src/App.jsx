@@ -1,7 +1,20 @@
-export default function App() {
+function AlertButton({ message, children }) {
   return (
-    <button>
-      I don't do anything
+    <button onClick={() => alert(message)}>
+      {children}
     </button>
+  );
+}
+
+export default function Toolbar() {
+  return (
+    <div>
+      <AlertButton message="Playing!">
+        Play Movie
+      </AlertButton>
+      <AlertButton message="Uploading!">
+        Upload Image
+      </AlertButton>
+    </div>
   );
 }
